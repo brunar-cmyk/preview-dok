@@ -1,0 +1,672 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Conheça todas as unidades da rede Sleep Hotéis em Brasília — 9 hotéis em Taguatinga e Águas Claras, DF.">
+    <title>Nossas Unidades | Sleep Hotéis em Brasília</title>
+    <link rel="icon" type="image/png" href="imagens/logos/icone-boneco_Prancheta 1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXKFNX5');</script>
+<!-- End Google Tag Manager -->
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --azul: #3C8CC8; --azul-escuro: #2d6fa0;
+            --laranja: #f49200; --laranja-escuro: #d97e00;
+            --branco: #ffffff; --cinza-claro: #f7f7f7;
+            --cinza: #e5e5e5; --texto: #1a1a1a; --texto-suave: #666666;
+            --sombra: 0 4px 24px rgba(0,0,0,0.07);
+            --sombra-hover: 0 8px 32px rgba(0,0,0,0.14);
+            --radius: 14px; --transicao: all 0.3s ease;
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Comfortaa', sans-serif; color: var(--texto); background: var(--branco); line-height: 1.6; overflow-x: hidden; }
+        img { max-width: 100%; display: block; }
+        a { text-decoration: none; color: inherit; }
+        h1, h2, h3 { font-family: 'Raleway', sans-serif; line-height: 1.2; }
+        .section-tag { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--laranja); display: block; margin-bottom: 0.75rem; }
+        .section-title { font-size: clamp(2rem, 4vw, 2.8rem); color: var(--texto); margin-bottom: 1rem; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        section { padding: 5rem 0; }
+        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 2rem; border-radius: 50px; font-family: 'Comfortaa', sans-serif; font-size: 0.875rem; font-weight: 600; cursor: pointer; border: none; transition: var(--transicao); letter-spacing: 0.02em; }
+        .btn-primary { background: var(--laranja); color: var(--branco); }
+        .btn-primary:hover { background: var(--laranja-escuro); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(244,146,0,0.4); }
+        .btn-outline-white { background: transparent; color: var(--branco); border: 2px solid rgba(255,255,255,0.7); }
+        .btn-outline-white:hover { background: var(--branco); color: var(--texto); transform: translateY(-2px); }
+        .btn-azul { background: var(--azul); color: var(--branco); }
+        .btn-azul:hover { background: var(--azul-escuro); transform: translateY(-2px); }
+
+        /* HEADER */
+        header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: transparent; box-shadow: none; padding: 0; transition: background 0.4s ease, box-shadow 0.4s ease; }
+        header.scrolled { background: var(--branco); box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+        .header-logo-row { display: flex; align-items: center; justify-content: center; padding: 0.9rem 0; border-bottom: 1px solid rgba(255,255,255,0.18); position: relative; transition: border-color 0.4s ease; }
+        header.scrolled .header-logo-row { border-bottom-color: #ebebeb; }
+        .logo { display: flex; align-items: center; }
+        .logo-img { height: 44px; width: auto; }
+        .logo-img-colorida { height: 44px; width: auto; display: none; }
+        header.scrolled .logo-img { display: none; }
+        header.scrolled .logo-img-colorida { display: block; }
+        .header-nav-row { display: flex; align-items: center; justify-content: center; gap: 2rem; padding: 0.55rem 1rem; }
+        .nav-links { display: flex; align-items: center; list-style: none; gap: 0; }
+        .nav-links li { display: flex; align-items: center; }
+        .nav-links li + li::before { content: '•'; color: var(--laranja); padding: 0 1rem; font-size: 0.55rem; }
+        .nav-links a { font-family: 'Comfortaa', cursive; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: rgba(255,255,255,0.9); transition: var(--transicao); position: relative; }
+        .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--laranja); transition: var(--transicao); }
+        .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+        .nav-links a:hover { color: var(--laranja); }
+        header.scrolled .nav-links a { color: var(--texto); }
+        header.scrolled .nav-links a:hover, header.scrolled .nav-links a.active { color: var(--azul); }
+        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; position: absolute; right: 0; top: 50%; transform: translateY(-50%); }
+        .hamburger span { display: block; width: 24px; height: 2px; background: var(--branco); border-radius: 2px; transition: var(--transicao); }
+        header.scrolled .hamburger span { background: var(--texto); }
+        nav#mobileNav { display: none; position: fixed; inset: 0; background: var(--branco); z-index: 2000; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; font-size: 1.25rem; font-weight: 600; }
+        nav#mobileNav.open { display: flex; }
+        .mobile-nav-close { position: absolute; top: 1.5rem; right: 2rem; font-size: 1.5rem; background: none; border: none; cursor: pointer; }
+
+        /* HERO */
+        #hero { min-height: 65vh; display: flex; align-items: center; position: relative; overflow: hidden; }
+        .hero-bg { position: absolute; inset: 0; background: url('imagens/Fachada.png') center/cover no-repeat; }
+        .hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(21,42,70,0.90) 0%, rgba(44,111,160,0.78) 100%); }
+        .hero-content { position: relative; z-index: 2; max-width: 680px; padding-top: 80px; }
+        .hero-location { display: inline-flex; align-items: center; gap: 0.75rem; color: rgba(255,255,255,0.75); font-size: 0.72rem; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.5rem; background: rgba(255,255,255,0.1); backdrop-filter: blur(8px); padding: 0.4rem 1.2rem; border-radius: 50px; border: 1px solid rgba(255,255,255,0.2); }
+        .hero-title { font-family: 'Comfortaa', sans-serif; font-size: clamp(2.8rem, 7vw, 5rem); color: var(--branco); font-weight: 700; margin-bottom: 1.25rem; line-height: 1.1; }
+        .hero-title span { color: var(--laranja); }
+        .hero-desc { font-size: 1rem; color: rgba(255,255,255,0.82); margin-bottom: 2.5rem; line-height: 1.75; max-width: 520px; }
+        .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+        /* FAIXA DE NÚMEROS */
+        #numeros-rede { background: var(--azul); padding: 2.5rem 0; }
+        .numeros-rede-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 0; }
+        .numero-rede-item { text-align: center; padding: 1rem 2rem; border-right: 1px solid rgba(255,255,255,0.2); }
+        .numero-rede-item:last-child { border-right: none; }
+        .numero-rede-val { font-family: 'Raleway', sans-serif; font-size: 2.5rem; font-weight: 700; color: var(--branco); line-height: 1; }
+        .numero-rede-label { font-size: 0.78rem; color: rgba(255,255,255,0.75); margin-top: 0.4rem; letter-spacing: 0.05em; }
+
+        /* FILTROS */
+        #unidades { background: var(--cinza-claro); }
+        .filtros-container { margin-bottom: 3rem; display: flex; flex-direction: column; gap: 2rem; align-items: center; }
+        .filtros-grupo { display: flex; flex-direction: column; align-items: center; gap: 1rem; width: 100%; }
+        .filtros-header { display: flex; align-items: center; justify-content: center; gap: 0.85rem; width: 100%; max-width: 480px; }
+        .filtros-header::before, .filtros-header::after { content: ''; flex: 1; height: 1px; background: linear-gradient(to right, transparent, rgba(60,140,200,0.35)); }
+        .filtros-header::after { background: linear-gradient(to left, transparent, rgba(60,140,200,0.35)); }
+        .filtros-label { display: inline-flex; align-items: center; gap: 0.45rem; font-family: 'Comfortaa', sans-serif; font-size: 0.72rem; font-weight: 700; color: var(--azul); text-transform: uppercase; letter-spacing: 0.12em; white-space: nowrap; }
+        .filtros-label svg { width: 0.85rem; height: 0.85rem; }
+        .filtros-pills { display: flex; align-items: center; justify-content: center; gap: 0.6rem; flex-wrap: wrap; }
+        .filtro-btn { padding: 0.5rem 1.25rem; border-radius: 50px; border: 2px solid var(--cinza); background: var(--branco); font-family: 'Comfortaa', sans-serif; font-size: 0.78rem; font-weight: 600; cursor: pointer; transition: var(--transicao); color: var(--texto-suave); }
+        .filtro-btn:hover { border-color: var(--azul); color: var(--azul); }
+        .filtro-btn.active { background: var(--azul); border-color: var(--azul); color: var(--branco); }
+        .filtro-btn[data-servico].active { background: var(--laranja); border-color: var(--laranja); color: var(--branco); }
+
+        /* GRID DE UNIDADES */
+        .unidades-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; }
+        .unidade-card { background: var(--branco); border-radius: var(--radius); overflow: hidden; box-shadow: var(--sombra); transition: var(--transicao); display: flex; flex-direction: column; }
+        .unidade-card:hover { box-shadow: var(--sombra-hover); transform: translateY(-6px); }
+        .unidade-card.oculto { display: none; }
+        .unidade-foto { height: 220px; background: center/cover no-repeat; position: relative; flex-shrink: 0; }
+        .unidade-badge { position: absolute; top: 1rem; left: 1rem; background: rgba(21,42,70,0.82); backdrop-filter: blur(6px); color: var(--branco); font-size: 0.68rem; font-weight: 600; letter-spacing: 0.12em; text-transform: uppercase; padding: 0.3rem 0.9rem; border-radius: 50px; display: flex; align-items: center; gap: 0.4rem; }
+        .unidade-badge svg { width: 0.75rem; height: 0.75rem; flex-shrink: 0; }
+        .unidade-dok .unidade-foto::after { content: 'Você está aqui'; position: absolute; top: 1rem; right: 1rem; background: var(--laranja); color: var(--branco); font-size: 0.65rem; font-weight: 700; padding: 0.3rem 0.8rem; border-radius: 50px; letter-spacing: 0.05em; }
+        .unidade-body { padding: 1.5rem; flex: 1; display: flex; flex-direction: column; }
+        .unidade-nome { font-size: 1.1rem; font-weight: 700; color: var(--texto); margin-bottom: 0.35rem; }
+        .unidade-desc { font-size: 0.84rem; color: var(--texto-suave); line-height: 1.65; flex: 1; }
+        .unidade-footer { display: flex; align-items: center; justify-content: space-between; margin-top: 1.5rem; padding-top: 1.25rem; border-top: 1px solid var(--cinza); }
+        .unidade-tags { display: flex; gap: 0.5rem; flex-wrap: wrap; }
+        .unidade-tag { font-size: 0.68rem; font-weight: 600; padding: 0.25rem 0.7rem; border-radius: 50px; background: rgba(60,140,200,0.1); color: var(--azul); }
+        .unidade-btn { display: inline-flex; align-items: center; gap: 0.4rem; padding: 0.55rem 1.25rem; border-radius: 50px; background: var(--azul); color: var(--branco); font-family: 'Comfortaa', sans-serif; font-size: 0.78rem; font-weight: 600; transition: var(--transicao); white-space: nowrap; }
+        .unidade-btn:hover { background: var(--azul-escuro); transform: translateY(-2px); }
+        .unidade-btn svg { width: 0.85rem; height: 0.85rem; }
+
+        /* SEM RESULTADOS */
+        .sem-resultados { display: none; text-align: center; padding: 4rem 2rem; color: var(--texto-suave); grid-column: 1 / -1; }
+        .sem-resultados svg { width: 3rem; height: 3rem; margin: 0 auto 1rem; color: var(--cinza); }
+
+        /* CTA FINAL */
+        #cta-final { background: linear-gradient(135deg, rgba(21,42,70,0.88) 0%, rgba(42,111,168,0.72) 100%), url('imagens/Fachada.png') center/cover no-repeat; text-align: center; padding: 6rem 0; }
+        #cta-final .section-tag { color: rgba(255,255,255,0.7); }
+        #cta-final h2 { font-size: clamp(2rem, 4vw, 2.8rem); color: var(--branco); margin-bottom: 1rem; }
+        #cta-final p { color: rgba(255,255,255,0.82); font-size: 1rem; max-width: 520px; margin: 0 auto 2.5rem; line-height: 1.75; }
+        .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+        /* FOOTER */
+        footer { background: var(--azul); color: rgba(255,255,255,0.88); }
+        .footer-main { padding: 3.5rem 0; }
+        .footer-cols { display: grid; grid-template-columns: 1fr auto 1fr; gap: 4rem; align-items: center; }
+        .footer-contato h3 { font-family: 'Comfortaa', sans-serif; color: var(--branco); font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; }
+        .footer-contato-lista { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+        .footer-contato { text-align: center; }
+        .footer-contato-lista li { display: flex; align-items: center; justify-content: center; gap: 0.75rem; font-size: 0.88rem; color: rgba(255,255,255,0.9); }
+        .footer-contato-lista li svg { width: 1.1rem; height: 1.1rem; color: var(--laranja); flex-shrink: 0; }
+        .footer-contato-lista a { color: rgba(255,255,255,0.9); transition: var(--transicao); }
+        .footer-contato-lista a:hover { color: var(--branco); text-decoration: underline; }
+        .footer-centro { text-align: center; }
+        .footer-centro img { height: 80px; width: auto; margin: 0 auto 1rem; }
+        .footer-tagline { font-family: 'Comfortaa', sans-serif; color: rgba(255,255,255,0.82); font-size: 1rem; letter-spacing: 0.04em; }
+        .footer-unidades { text-align: center; }
+        .footer-unidades h3 { font-family: 'Comfortaa', sans-serif; color: var(--branco); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; }
+        .footer-unidades p { color: rgba(255,255,255,0.78); font-size: 0.88rem; line-height: 1.65; margin-bottom: 1.5rem; }
+        .btn-footer { background: var(--laranja); color: var(--branco); display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.75rem; border-radius: 50px; font-family: 'Comfortaa', sans-serif; font-size: 0.84rem; font-weight: 600; transition: var(--transicao); }
+        .btn-footer:hover { background: var(--laranja-escuro); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(244,146,0,0.4); }
+        .footer-bottom { background: rgba(0,0,0,0.18); padding: 1.25rem 0; }
+        .footer-bottom-inner { display: flex; align-items: center; justify-content: space-between; font-size: 0.78rem; color: rgba(255,255,255,0.55); }
+
+        /* WHATSAPP */
+        .whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 998; display: flex; align-items: center; gap: 0.75rem; background: #25D366; color: white; padding: 0.9rem 1.5rem; border-radius: 50px; font-weight: 600; font-size: 0.875rem; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: var(--transicao); animation: waPulse 2.5s ease-in-out infinite; }
+        .whatsapp-float:hover { transform: translateY(-3px); animation: none; }
+        @keyframes waPulse { 0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); } 50% { box-shadow: 0 4px 28px rgba(37,211,102,0.65); } }
+        .wa-icon { width: 22px; height: 22px; flex-shrink: 0; }
+
+        /* RESPONSIVO */
+        @media (max-width: 1024px) {
+            .unidades-grid { grid-template-columns: repeat(2, 1fr); }
+            .numeros-rede-grid { grid-template-columns: repeat(2, 1fr); }
+            .numero-rede-item:nth-child(2) { border-right: none; }
+            .numero-rede-item:nth-child(3) { border-top: 1px solid rgba(255,255,255,0.2); }
+        }
+        @media (max-width: 768px) {
+            .whatsapp-float { bottom: 2rem; padding: 1rem; border-radius: 50%; width: 56px; height: 56px; justify-content: center; }
+            .whatsapp-float span { display: none; }
+            .header-nav-row { display: none; }
+            .hamburger { display: flex; }
+            .header-logo-row { padding: 0.85rem 0; }
+            header { background: var(--branco); box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+            header .header-logo-row { border-bottom-color: #ebebeb; }
+            header .hamburger span { background: var(--texto); }
+            .unidades-grid { grid-template-columns: 1fr; }
+            .numeros-rede-grid { grid-template-columns: repeat(2, 1fr); }
+            .numero-rede-item { padding: 1rem; }
+            .numero-rede-item:nth-child(2n) { border-right: none; }
+            .numero-rede-item:nth-child(n+3) { border-top: 1px solid rgba(255,255,255,0.2); }
+            .numero-rede-val { font-size: 1.75rem; }
+            .numero-rede-label { font-size: 0.7rem; }
+            .hero-actions { flex-direction: column; }
+            .filtros-header { max-width: 100%; }
+            .filtros-grupo { gap: 0.75rem; }
+            .filtros-pills { flex-wrap: nowrap; overflow-x: auto; justify-content: flex-start; padding-bottom: 0.5rem; width: 100%; -webkit-overflow-scrolling: touch; scrollbar-width: none; }
+            .filtros-pills::-webkit-scrollbar { display: none; }
+            .filtro-btn { white-space: nowrap; flex-shrink: 0; }
+            .footer-cols { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+            .footer-centro { order: -1; }
+            .footer-unidades { text-align: center; }
+            .footer-contato-lista li { justify-content: center; }
+            .footer-bottom-inner { flex-direction: column; gap: 0.5rem; text-align: center; }
+            .cta-actions { flex-direction: column; align-items: center; }
+        }
+    </style>
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Hotel",
+  "name": "Dok Hotel",
+  "url": "https://dokhotel.com.br",
+  "telephone": "+556133992565",
+  "email": "reservasdokhotel@gmail.com",
+  "description": "Hospedagem confortável em Águas Claras, Brasília-DF. Quartos com TV, ar-condicionado, frigobar, banheiro privativo e Wi-Fi. Café da manhã incluso, garagem coberta e recepção 24h. A 13 km do Aeroporto JK e próximo ao Parque Águas Claras, Estádio Mané Garrincha e metrô.",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "ADE Conjunto 16 Lote 35",
+    "addressLocality": "Águas Claras",
+    "addressRegion": "DF",
+    "postalCode": "71988-720",
+    "addressCountry": "BR"
+  },
+  "geo": {
+    "@type": "GeoCoordinates",
+    "latitude": -15.8339,
+    "longitude": -48.0250
+  },
+  "priceRange": "$$",
+  "checkinTime": "14:00",
+  "checkoutTime": "12:00",
+  "amenityFeature": [
+    {"@type": "LocationFeatureSpecification", "name": "Wi-Fi gratuito", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Café da manhã incluso", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Ar-condicionado", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Garagem coberta", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Recepção 24 horas", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Frigobar", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Smart TV", "value": true},
+    {"@type": "LocationFeatureSpecification", "name": "Elevador", "value": true}
+  ],
+  "containedInPlace": {
+    "@type": "AdministrativeArea",
+    "name": "Águas Claras",
+    "containedInPlace": {
+      "@type": "City",
+      "name": "Brasília",
+      "addressRegion": "DF",
+      "addressCountry": "BR"
+    }
+  }
+}
+</script>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXKFNX5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header id="header">
+    <div class="container">
+        <div class="header-logo-row">
+            <a href="index.html" class="logo">
+                <img src="imagens/logos/header-site-dok-sleep_Prancheta 1 cópia 7.png" alt="Dok Hotel" class="logo-img">
+                <img src="imagens/logos/header-site-dok-sleep_Prancheta 1 cópia 6.png" alt="Dok Hotel" class="logo-img-colorida">
+            </a>
+            <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="header-nav-row">
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#acomodacoes">Acomodações</a></li>
+                <li><a href="empresas.html">Empresas</a></li>
+                <li><a href="mensalistas.html">Mensalistas</a></li>
+                <li><a href="index.html#localizacao">Localização</a></li>
+                <li><a href="unidades.html" class="active">Nossas Unidades</a></li>
+            </ul>
+            <a href="https://wa.me/556133992565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20reservar%20no%20Dok%20Hotel"
+               class="btn btn-primary" target="_blank" rel="noopener">
+                <i data-lucide="message-circle"></i> Reserve pelo WhatsApp
+            </a>
+        </div>
+    </div>
+</header>
+
+<nav id="mobileNav">
+    <button class="mobile-nav-close" onclick="toggleMenu()">✕</button>
+    <a href="index.html" onclick="toggleMenu()">Início</a>
+    <a href="index.html#acomodacoes" onclick="toggleMenu()">Acomodações</a>
+    <a href="empresas.html" onclick="toggleMenu()">Empresas</a>
+    <a href="mensalistas.html" onclick="toggleMenu()">Mensalistas</a>
+    <a href="index.html#localizacao" onclick="toggleMenu()">Localização</a>
+    <a href="unidades.html" onclick="toggleMenu()">Nossas Unidades</a>
+    <a href="https://wa.me/556133992565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20reservar%20no%20Dok%20Hotel"
+       class="btn btn-primary" target="_blank" rel="noopener" onclick="toggleMenu()">
+        <i data-lucide="message-circle"></i> Reserve pelo WhatsApp
+    </a>
+</nav>
+
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-location">Dok Hotel · Sleep Hotéis · Águas Claras · Brasília</div>
+            <h1 class="hero-title">Uma rede pensada<br>para <span>você</span></h1>
+            <p class="hero-desc">9 hotéis distribuídos estrategicamente em Brasília, com a mesma qualidade, conforto e acolhimento que você encontra no Dok Hotel.</p>
+            <div class="hero-actions">
+                <a href="#unidades" class="btn btn-primary">
+                    <i data-lucide="building-2"></i> Ver todas as unidades
+                </a>
+                <a href="https://wa.me/556133992565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Dok%20Hotel"
+                   class="btn btn-outline-white" target="_blank" rel="noopener">
+                    <i data-lucide="message-circle"></i> Falar pelo WhatsApp
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FAIXA NUMÉRICA -->
+<div id="numeros-rede">
+    <div class="container">
+        <div class="numeros-rede-grid">
+            <div class="numero-rede-item">
+                <div class="numero-rede-val">9</div>
+                <div class="numero-rede-label">Hotéis na rede</div>
+            </div>
+            <div class="numero-rede-item">
+                <div class="numero-rede-val">2</div>
+                <div class="numero-rede-label">Regiões de Brasília</div>
+            </div>
+            <div class="numero-rede-item">
+                <div class="numero-rede-val">★★★★★</div>
+                <div class="numero-rede-label">Cada hotel, uma experiência de excelência</div>
+            </div>
+            <div class="numero-rede-item">
+                <div class="numero-rede-val"><i data-lucide="award" style="width:2.25rem;height:2.25rem;"></i></div>
+                <div class="numero-rede-label">Sleep Hotéis: padrão de qualidade que acompanha você em todas nossas unidades.</div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- UNIDADES -->
+<section id="unidades">
+    <div class="container">
+        <div style="text-align:center; max-width:580px; margin:0 auto 3rem;">
+            <span class="section-tag">Nossas Unidades</span>
+            <h2 class="section-title">Encontre o hotel ideal<br>para você em Brasília</h2>
+            <p style="font-size:1rem; color:var(--texto-suave); line-height:1.75;">Use os filtros abaixo para encontrar a unidade ideal para você.</p>
+        </div>
+
+        <div class="filtros-container">
+            <div class="filtros-grupo">
+                <div class="filtros-header">
+                    <span class="filtros-label"><i data-lucide="map-pin"></i> Onde fica?</span>
+                </div>
+                <div class="filtros-pills">
+                    <button class="filtro-btn active" data-regiao="todos">Todos</button>
+                    <button class="filtro-btn" data-regiao="aguas-claras">Águas Claras</button>
+                    <button class="filtro-btn" data-regiao="taguatinga-sul">Taguatinga Sul</button>
+                    <button class="filtro-btn" data-regiao="taguatinga-norte">Taguatinga Norte</button>
+                    <button class="filtro-btn" data-regiao="taguatinga-centro">Taguatinga Centro</button>
+                </div>
+            </div>
+            <div class="filtros-grupo">
+                <div class="filtros-header">
+                    <span class="filtros-label"><i data-lucide="sliders-horizontal"></i> O que precisa?</span>
+                </div>
+                <div class="filtros-pills">
+                    <button class="filtro-btn active" data-servico="todos">Todos</button>
+                    <button class="filtro-btn" data-servico="garagem-coberta">Garagem coberta</button>
+                    <button class="filtro-btn" data-servico="garagem-descoberta">Garagem descoberta</button>
+                    <button class="filtro-btn" data-servico="hidromassagem">Hidromassagem</button>
+                    <button class="filtro-btn" data-servico="ideal-para-empresas">Ideal para empresas</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="unidades-grid" id="unidadesGrid">
+
+            <!-- Dok Hotel — Você está aqui -->
+            <div class="unidade-card unidade-dok" data-regiao="aguas-claras" data-servicos="garagem-coberta ideal-para-empresas">
+                <div class="unidade-foto" style="background-image: url('imagens/Fachada.png');">
+                    <div class="unidade-badge"><i data-lucide="map-pin"></i> Águas Claras</div>
+                </div>
+                <div class="unidade-body">
+                    <div class="unidade-nome">Dok Hotel</div>
+                    <p class="unidade-desc">Em Águas Claras, a 13 km do Aeroporto JK. Garagem coberta, quartos do individual ao quádruplo e atendimento 24h — ideal para viagens de negócios e estadias rápidas.</p>
+                    <div class="unidade-footer">
+                        <div class="unidade-tags">
+                            <span class="unidade-tag">Wi-Fi</span>
+                            <span class="unidade-tag">Café da manhã</span>
+                            <span class="unidade-tag">Garagem coberta</span>
+                        </div>
+                        <a href="index.html" class="unidade-btn"><i data-lucide="arrow-right"></i> Conhecer</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel Suntuoso -->
+            <div class="unidade-card" data-regiao="aguas-claras" data-servicos="garagem-coberta hidromassagem ideal-para-empresas">
+                <div class="unidade-foto" style="background-image: url('imagens/hoteis rede/hotel-suntuoso.png');">
+                    <div class="unidade-badge"><i data-lucide="map-pin"></i> Águas Claras</div>
+                </div>
+                <div class="unidade-body">
+                    <div class="unidade-nome">Hotel Suntuoso</div>
+                    <p class="unidade-desc">Próximo ao aeroporto e à via EPNB. Elevador, garagem coberta e quartos com hidromassagem para uma experiência completa de conforto.</p>
+                    <div class="unidade-footer">
+                        <div class="unidade-tags">
+                            <span class="unidade-tag">Wi-Fi</span>
+                            <span class="unidade-tag">Café da manhã</span>
+                            <span class="unidade-tag">Garagem coberta</span>
+                            <span class="unidade-tag">Hidromassagem</span>
+                        </div>
+                        <a href="https://hotelsuntuoso.com.br/" class="unidade-btn" target="_blank" rel="noopener"><i data-lucide="arrow-right"></i> Conhecer</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel Salute -->
+            <div class="unidade-card" data-regiao="taguatinga-sul" data-servicos="garagem-descoberta hidromassagem ideal-para-empresas">
+                <div class="unidade-foto" style="background-image: url('imagens/hoteis rede/fachada-hotel-salute.jpg');">
+                    <div class="unidade-badge"><i data-lucide="map-pin"></i> Taguatinga Sul</div>
+                </div>
+                <div class="unidade-body">
+                    <div class="unidade-nome">Hotel Salute</div>
+                    <p class="unidade-desc">No Setor Hoteleiro de Taguatinga Sul, a unidade principal da rede. Instalações modernas, elevador e quartos com hidromassagem — referência em conforto e atendimento personalizado.</p>
+                    <div class="unidade-footer">
+                        <div class="unidade-tags">
+                            <span class="unidade-tag">Wi-Fi</span>
+                            <span class="unidade-tag">Café da manhã</span>
+                            <span class="unidade-tag">Garagem descoberta</span>
+                            <span class="unidade-tag">Hidromassagem</span>
+                        </div>
+                        <a href="https://hotelsalute.com.br/" class="unidade-btn" target="_blank" rel="noopener"><i data-lucide="arrow-right"></i> Conhecer</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel Sublime -->
+            <div class="unidade-card" data-regiao="taguatinga-sul" data-servicos="ideal-para-empresas">
+                <div class="unidade-foto" style="background-image: url('imagens/hoteis rede/sublime.webp');">
+                    <div class="unidade-badge"><i data-lucide="map-pin"></i> Taguatinga Sul</div>
+                </div>
+                <div class="unidade-body">
+                    <div class="unidade-nome">Hotel Sublime</div>
+                    <p class="unidade-desc">Próximo à Universidade Católica de Brasília. Quartos amplos ideais para grupos, famílias e estadias corporativas com ótimo custo-benefício.</p>
+                    <div class="unidade-footer">
+                        <div class="unidade-tags">
+                            <span class="unidade-tag">Wi-Fi</span>
+                            <span class="unidade-tag">Café da manhã</span>
+                            <span class="unidade-tag">Ideal para empresas</span>
+                        </div>
+                        <a href="https://hotelsublime.com/" class="unidade-btn" target="_blank" rel="noopener"><i data-lucide="arrow-right"></i> Conhecer</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel Supreme -->
+            <div class="unidade-card" data-regiao="taguatinga-sul" data-servicos="garagem-coberta ideal-para-empresas">
+                <div class="unidade-foto" style="background-image: url('imagens/hoteis rede/supreme-hotel.webp');">
+                    <div class="unidade-badge"><i data-lucide="map-pin"></i> Taguatinga Sul</div>
+                </div>
+                <div class="unidade-body">
+                    <div class="unidade-nome">Hotel Supreme</div>
+                    <p class="unidade-desc">Próximo ao Taguatinga Shopping. Fácil acesso a comércios, farmácias e supermercados — ótimo custo-benefício em localização privilegiada com ambiente familiar.</p>
+                    <div class="unidade-footer">
+                        <div class="unidade-tags">
+                            <span class="unidade-tag">Wi-Fi</span>
+                            <span class="unidade-tag">Café da manhã</span>
+                            <span class="unidade-tag">Garagem coberta</span>
+                        </div>
+                        <a href="http://hotelsupreme.com.br/" class="unidade-btn" target="_blank" rel="noopener"><i data-lucide="arrow-right"></i> Conhecer</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel Star -->
+            <div class="unidade-card" data-regiao="taguatinga-sul" data-servicos="garagem-coberta ideal-para-empresas">
+                <div class="unidade-foto" style="background-image: url('imagens/hoteis rede/star-hotel.png');">
+                    <div class="unidade-badge"><i data-lucide="map-pin"></i> Taguatinga Sul</div>
+                </div>
+                <div class="unidade-body">
+                    <div class="unidade-nome">Hotel Star</div>
+                    <p class="unidade-desc">Próximo à estação de metrô Taguatinga Sul. Garagem coberta e fácil acesso ao transporte público — ideal para quem precisa de mobilidade e praticidade.</p>
+                    <div class="unidade-footer">
+                        <div class="unidade-tags">
+                            <span class="unidade-tag">Wi-Fi</span>
+                            <span class="unidade-tag">Metrô</span>
+                            <span class="unidade-tag">Garagem coberta</span>
+                        </div>
+                        <a href="https://hotelstar.com.br/" class="unidade-btn" target="_blank" rel="noopener"><i data-lucide="arrow-right"></i> Conhecer</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel Viena -->
+            <div class="unidade-card" data-regiao="taguatinga-norte" data-servicos="garagem-coberta">
+                <div class="unidade-foto" style="background-image: url('imagens/hoteis rede/viena-hotel.jpg');">
+                    <div class="unidade-badge"><i data-lucide="map-pin"></i> Taguatinga Norte</div>
+                </div>
+                <div class="unidade-body">
+                    <div class="unidade-nome">Hotel Viena</div>
+                    <p class="unidade-desc">Próximo à Praça do Relógio, com acesso ao metrô e transporte público. Quartos para até quatro pessoas — boa opção para pequenos grupos e viajantes.</p>
+                    <div class="unidade-footer">
+                        <div class="unidade-tags">
+                            <span class="unidade-tag">Wi-Fi</span>
+                            <span class="unidade-tag">Café da manhã</span>
+                            <span class="unidade-tag">Garagem coberta</span>
+                        </div>
+                        <a href="https://hotelviena.com.br/" class="unidade-btn" target="_blank" rel="noopener"><i data-lucide="arrow-right"></i> Conhecer</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel Soberano -->
+            <div class="unidade-card" data-regiao="taguatinga-norte" data-servicos="ideal-para-empresas">
+                <div class="unidade-foto" style="background-image: url('imagens/hoteis rede/soberano (1).jpg');">
+                    <div class="unidade-badge"><i data-lucide="map-pin"></i> Taguatinga Norte</div>
+                </div>
+                <div class="unidade-body">
+                    <div class="unidade-nome">Hotel Soberano</div>
+                    <p class="unidade-desc">Próximo ao Hospital Anchieta em Taguatinga Norte. Recém-inaugurado com instalações modernas e ambiente novo, confortável e bem estruturado.</p>
+                    <div class="unidade-footer">
+                        <div class="unidade-tags">
+                            <span class="unidade-tag">Wi-Fi</span>
+                            <span class="unidade-tag">Café da manhã</span>
+                            <span class="unidade-tag">Ideal para empresas</span>
+                        </div>
+                        <a href="https://hotelsoberano.com.br/" class="unidade-btn" target="_blank" rel="noopener"><i data-lucide="arrow-right"></i> Conhecer</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Hotel Safira -->
+            <div class="unidade-card" data-regiao="taguatinga-centro" data-servicos="hidromassagem">
+                <div class="unidade-foto" style="background-image: url('imagens/hoteis rede/paris-hotel.jpg');">
+                    <div class="unidade-badge"><i data-lucide="map-pin"></i> Taguatinga Centro</div>
+                </div>
+                <div class="unidade-body">
+                    <div class="unidade-nome">Hotel Safira</div>
+                    <p class="unidade-desc">No centro de Taguatinga, com fácil acesso ao transporte público. Quartos com hidromassagem disponíveis para quem busca mais conforto.</p>
+                    <div class="unidade-footer">
+                        <div class="unidade-tags">
+                            <span class="unidade-tag">Wi-Fi</span>
+                            <span class="unidade-tag">Café da manhã</span>
+                            <span class="unidade-tag">Hidromassagem</span>
+                        </div>
+                        <a href="https://hotelsafira.com.br/" class="unidade-btn" target="_blank" rel="noopener"><i data-lucide="arrow-right"></i> Conhecer</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</section>
+
+
+<!-- CTA FINAL -->
+<section id="cta-final">
+    <div class="container">
+        <span class="section-tag">Encontrou sua unidade?</span>
+        <h2>Fale com a gente<br>e garanta sua reserva</h2>
+        <p>Nossa equipe está disponível 24h para ajudar você a escolher a unidade ideal e confirmar sua hospedagem sem burocracia.</p>
+        <div class="cta-actions">
+            <a href="https://wa.me/556133992565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20reservar%20no%20Dok%20Hotel"
+               class="btn btn-primary" target="_blank" rel="noopener">
+                <i data-lucide="message-circle"></i> Reservar pelo WhatsApp
+            </a>
+            <a href="index.html#acomodacoes" class="btn btn-outline-white">
+                <i data-lucide="bed-double"></i> Ver Acomodações
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-cols">
+                <div class="footer-contato">
+                    <h3>Contatos</h3>
+                    <ul class="footer-contato-lista">
+                        <li><i data-lucide="phone"></i><a href="tel:+556133992565">(61) 3399-2565</a></li>
+                        <li><i data-lucide="mail"></i><a href="mailto:reservasdokhotel@gmail.com">reservasdokhotel@gmail.com</a></li>
+                        <li><i data-lucide="map-pin"></i>ADE Conjunto 16 Lote 35, Águas Claras – DF</li>
+                    </ul>
+                </div>
+                <div class="footer-centro">
+                    <img src="imagens/logos/icone-boneco_Prancheta 1.png" alt="Dok Hotel" loading="lazy">
+                    <div class="footer-tagline">sua casa fora de casa</div>
+                </div>
+                <div class="footer-unidades">
+                    <h3>Sleep Hotéis</h3>
+                    <p>Uma rede de hotéis em Taguatinga e Águas Claras com conforto, praticidade e ótimo custo-benefício.</p>
+                    <a href="unidades.html" class="btn-footer"><i data-lucide="building-2"></i>Nossas Unidades</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-inner">
+                <span>© 2026 Dok Hotel. Todos os direitos reservados.</span>
+                <span>Águas Claras · Brasília · DF</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/556133992565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Dok%20Hotel"
+   class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>Fale conosco</span>
+</a>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>
+    lucide.createIcons();
+
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 80); });
+
+    function toggleMenu() {
+        const nav = document.getElementById('mobileNav');
+        const isOpen = nav.classList.toggle('open');
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+
+    // Filtro de unidades — duas dimensões (região + serviço)
+    const cards = document.querySelectorAll('.unidade-card');
+    let activeRegiao = 'todos';
+    let activeServico = 'todos';
+
+    function aplicarFiltros() {
+        cards.forEach(card => {
+            const regiaoOk = activeRegiao === 'todos' || card.dataset.regiao === activeRegiao;
+            const servicoOk = activeServico === 'todos' || (card.dataset.servicos || '').split(' ').includes(activeServico);
+            card.classList.toggle('oculto', !(regiaoOk && servicoOk));
+        });
+    }
+
+    document.querySelectorAll('.filtro-btn[data-regiao]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.filtro-btn[data-regiao]').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeRegiao = btn.dataset.regiao;
+            aplicarFiltros();
+        });
+    });
+
+    document.querySelectorAll('.filtro-btn[data-servico]').forEach(btn => {
+        btn.addEventListener('click', () => {
+            document.querySelectorAll('.filtro-btn[data-servico]').forEach(b => b.classList.remove('active'));
+            btn.classList.add('active');
+            activeServico = btn.dataset.servico;
+            aplicarFiltros();
+        });
+    });
+</script>
+</body>
+</html>

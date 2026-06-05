@@ -1,0 +1,574 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dok Hotel para Empresas e Grupos — Condições especiais, faturamento direto e quartos confortáveis em Águas Claras, Brasília.">
+    <title>Empresas & Grupos | Dok Hotel - Águas Claras, Brasília</title>
+    <link rel="icon" type="image/png" href="imagens/logos/icone-boneco_Prancheta 1.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&family=Raleway:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-WXKFNX5');</script>
+<!-- End Google Tag Manager -->
+
+    <style>
+        *, *::before, *::after { margin: 0; padding: 0; box-sizing: border-box; }
+        :root {
+            --azul: #3C8CC8; --azul-escuro: #2d6fa0;
+            --laranja: #f49200; --laranja-escuro: #d97e00;
+            --branco: #ffffff; --cinza-claro: #f7f7f7;
+            --cinza: #e5e5e5; --texto: #1a1a1a; --texto-suave: #666666;
+            --sombra: 0 4px 24px rgba(0,0,0,0.07);
+            --sombra-hover: 0 8px 32px rgba(0,0,0,0.14);
+            --radius: 14px; --transicao: all 0.3s ease;
+        }
+        html { scroll-behavior: smooth; }
+        body { font-family: 'Comfortaa', sans-serif; color: var(--texto); background: var(--branco); line-height: 1.6; overflow-x: hidden; }
+        img { max-width: 100%; display: block; }
+        a { text-decoration: none; color: inherit; }
+        h1, h2, h3 { font-family: 'Raleway', sans-serif; line-height: 1.2; }
+        .section-tag { font-size: 0.72rem; font-weight: 600; letter-spacing: 0.18em; text-transform: uppercase; color: var(--laranja); display: block; margin-bottom: 0.75rem; }
+        .section-title { font-size: clamp(2rem, 4vw, 2.8rem); color: var(--texto); margin-bottom: 1rem; }
+        .section-subtitle { font-size: 1rem; color: var(--texto-suave); max-width: 520px; line-height: 1.75; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; }
+        section { padding: 5rem 0; }
+        .btn { display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.875rem 2rem; border-radius: 50px; font-family: 'Comfortaa', sans-serif; font-size: 0.875rem; font-weight: 600; cursor: pointer; border: none; transition: var(--transicao); letter-spacing: 0.02em; }
+        .btn-primary { background: var(--laranja); color: var(--branco); }
+        .btn-primary:hover { background: var(--laranja-escuro); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(244,146,0,0.4); }
+        .btn-whatsapp { background: #25D366; color: var(--branco); }
+        .btn-whatsapp:hover { background: #1da851; transform: translateY(-2px); }
+        .btn-outline-white { background: transparent; color: var(--branco); border: 2px solid rgba(255,255,255,0.7); }
+        .btn-outline-white:hover { background: var(--branco); color: var(--texto); transform: translateY(-2px); }
+
+        /* HEADER */
+        header { position: fixed; top: 0; left: 0; right: 0; z-index: 1000; background: transparent; box-shadow: none; padding: 0; transition: background 0.4s ease, box-shadow 0.4s ease; }
+        header.scrolled { background: var(--branco); box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+        .header-logo-row { display: flex; align-items: center; justify-content: center; padding: 0.9rem 0; border-bottom: 1px solid rgba(255,255,255,0.18); position: relative; transition: border-color 0.4s ease; }
+        header.scrolled .header-logo-row { border-bottom-color: #ebebeb; }
+        .logo { display: flex; align-items: center; }
+        .logo-img { height: 44px; width: auto; }
+        .logo-img-colorida { height: 44px; width: auto; display: none; }
+        header.scrolled .logo-img { display: none; }
+        header.scrolled .logo-img-colorida { display: block; }
+        .header-nav-row { display: flex; align-items: center; justify-content: center; gap: 2rem; padding: 0.55rem 1rem; }
+        .nav-links { display: flex; align-items: center; list-style: none; gap: 0; }
+        .nav-links li { display: flex; align-items: center; }
+        .nav-links li + li::before { content: '•'; color: var(--laranja); padding: 0 1rem; font-size: 0.55rem; }
+        .nav-links a { font-family: 'Comfortaa', cursive; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.07em; text-transform: uppercase; color: rgba(255,255,255,0.9); transition: var(--transicao); position: relative; }
+        .nav-links a::after { content: ''; position: absolute; bottom: -4px; left: 0; width: 0; height: 2px; background: var(--laranja); transition: var(--transicao); }
+        .nav-links a:hover::after, .nav-links a.active::after { width: 100%; }
+        .nav-links a:hover { color: var(--laranja); }
+        header.scrolled .nav-links a { color: var(--texto); }
+        header.scrolled .nav-links a:hover, header.scrolled .nav-links a.active { color: var(--azul); }
+        .hamburger { display: none; flex-direction: column; gap: 5px; cursor: pointer; background: none; border: none; padding: 4px; position: absolute; right: 0; top: 50%; transform: translateY(-50%); }
+        .hamburger span { display: block; width: 24px; height: 2px; background: var(--branco); border-radius: 2px; transition: var(--transicao); }
+        header.scrolled .hamburger span { background: var(--texto); }
+        nav#mobileNav { display: none; position: fixed; inset: 0; background: var(--branco); z-index: 2000; flex-direction: column; align-items: center; justify-content: center; gap: 2rem; }
+        nav#mobileNav.open { display: flex; }
+        nav#mobileNav a { font-family: 'Raleway', sans-serif; font-size: 1.8rem; color: var(--texto); transition: var(--transicao); }
+        nav#mobileNav a:hover { color: var(--azul); }
+        .mobile-nav-close { position: absolute; top: 1.5rem; right: 2rem; font-size: 1.5rem; background: none; border: none; cursor: pointer; }
+
+        /* HERO */
+        #hero { min-height: 70vh; display: flex; align-items: center; position: relative; overflow: hidden; }
+        .hero-bg { position: absolute; inset: 0; background: url('imagens/Fachada.png') center/cover no-repeat; }
+        .hero-overlay { position: absolute; inset: 0; background: linear-gradient(135deg, rgba(21,42,70,0.88) 0%, rgba(44,111,160,0.75) 100%); }
+        .hero-content { position: relative; z-index: 2; max-width: 680px; padding-top: 130px; }
+        .hero-location { display: inline-flex; align-items: center; gap: 0.75rem; color: rgba(255,255,255,0.75); font-size: 0.72rem; font-weight: 400; letter-spacing: 0.2em; text-transform: uppercase; margin-bottom: 1.5rem; background: rgba(255,255,255,0.1); backdrop-filter: blur(8px); padding: 0.4rem 1.2rem; border-radius: 50px; border: 1px solid rgba(255,255,255,0.2); }
+        .hero-title { font-family: 'Comfortaa', sans-serif; font-size: clamp(2.8rem, 7vw, 5rem); color: var(--branco); font-weight: 700; margin-bottom: 1.25rem; line-height: 1.1; }
+        .hero-title span { color: var(--laranja); }
+        .hero-desc { font-size: 1rem; color: rgba(255,255,255,0.82); margin-bottom: 2.5rem; line-height: 1.75; max-width: 520px; }
+        .hero-actions { display: flex; gap: 1rem; flex-wrap: wrap; }
+
+        /* BENEFÍCIOS */
+        #beneficios { background: var(--cinza-claro); }
+        .two-col { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: stretch; }
+        .fotos-duo { position: relative; height: 100%; min-height: 420px; }
+        .fotos-duo::before { content: ''; position: absolute; top: -1.75rem; right: -1.75rem; width: 58%; height: 58%; background: var(--azul); border-radius: var(--radius); opacity: 0.08; z-index: 0; }
+        .foto-principal { position: absolute; top: 0; right: 0; width: 78%; height: 86%; object-fit: cover; border-radius: var(--radius); display: block; z-index: 1; }
+        .foto-flutuante { position: absolute; bottom: 0; left: 0; width: 56%; height: 52%; object-fit: cover; border-radius: var(--radius); border: 5px solid var(--branco); box-shadow: 0 8px 32px rgba(0,0,0,0.2); display: block; z-index: 2; }
+        .foto-principal, .foto-flutuante { opacity: 0; transform: translateY(28px); transition: opacity 0.7s ease, transform 0.7s ease; }
+        .foto-flutuante { transition-delay: 0.2s; }
+        .fotos-duo.visible .foto-principal, .fotos-duo.visible .foto-flutuante { opacity: 1; transform: translateY(0); }
+        .lista-beneficios { display: flex; flex-direction: column; gap: 1.25rem; margin-top: 2rem; }
+        .beneficio-item { display: flex; align-items: flex-start; gap: 1rem; padding: 1.25rem 1.5rem; background: var(--branco); border-radius: var(--radius); box-shadow: var(--sombra); transition: var(--transicao); }
+        .beneficio-item:hover { box-shadow: var(--sombra-hover); transform: translateY(-3px); }
+        .beneficio-icone { width: 2.5rem; height: 2.5rem; border-radius: 50%; background: rgba(60,140,200,0.1); display: flex; align-items: center; justify-content: center; flex-shrink: 0; color: var(--azul); }
+        .beneficio-icone svg { width: 1.2rem; height: 1.2rem; }
+        .beneficio-texto strong { display: block; font-size: 0.95rem; font-weight: 700; color: var(--texto); margin-bottom: 0.2rem; }
+        .beneficio-texto span { font-size: 0.84rem; color: var(--texto-suave); }
+
+        /* NÚMEROS */
+        #numeros { background: var(--branco); }
+        .numeros-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 2rem; margin-top: 3rem; }
+        .numero-card { text-align: center; padding: 2.5rem 2rem; border-radius: var(--radius); border: 1px solid var(--cinza); transition: var(--transicao); }
+        .numero-card:hover { border-color: var(--azul); box-shadow: var(--sombra-hover); transform: translateY(-5px); }
+        .numero-val { font-family: 'Raleway', sans-serif; font-size: 3.5rem; font-weight: 700; color: var(--azul); line-height: 1; margin-bottom: 0.75rem; }
+        .numero-val-icone { color: var(--azul); margin-bottom: 0.75rem; display: flex; justify-content: center; }
+        .numero-val-icone svg { width: 3rem; height: 3rem; }
+        .numero-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .numero-card p { font-size: 0.875rem; color: var(--texto-suave); line-height: 1.65; }
+
+        /* COMODIDADES */
+        #comodidades { background: var(--cinza-claro); }
+        .comodidades-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 1.25rem; margin-top: 3rem; }
+        .comodidade-item { display: flex; align-items: center; gap: 0.75rem; padding: 1.25rem; background: var(--branco); border-radius: var(--radius); box-shadow: var(--sombra); font-size: 0.875rem; font-weight: 600; }
+        .foto-unica-wrap { position: relative; }
+        .foto-unica-wrap::before { content: ''; position: absolute; top: -1.5rem; right: -1.5rem; width: 60%; height: 60%; background: var(--azul); border-radius: var(--radius); opacity: 0.08; z-index: 0; }
+        .foto-unica-wrap img { border-radius: var(--radius); box-shadow: 0 12px 40px rgba(0,0,0,0.18); position: relative; z-index: 1; width: 100%; object-fit: cover; max-height: 460px; }
+        #lavanderia-empresas { background: var(--cinza-claro); padding: 3rem 0 5rem; }
+        .servicos-extras-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .servico-extra-card { background: linear-gradient(160deg, var(--azul) 0%, var(--azul-escuro) 100%); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
+        .servico-extra-foto { width: 100%; height: 210px; object-fit: cover; display: block; }
+        .servico-extra-foto.foto-contem { object-fit: cover; object-position: bottom; }
+        .servico-extra-corpo { padding: 1.75rem 2rem 2rem; display: flex; flex-direction: column; flex: 1; gap: 0.6rem; }
+        .servico-extra-corpo .section-tag { color: rgba(255,255,255,0.7); margin-bottom: 0; }
+        .servico-extra-corpo h3 { font-family: 'Raleway', sans-serif; font-size: 1.2rem; color: var(--branco); }
+        .servico-extra-corpo p { font-size: 0.875rem; color: rgba(255,255,255,0.82); line-height: 1.65; flex: 1; }
+        .servico-extra-corpo .btn { align-self: flex-start; margin-top: 0.5rem; }
+        .comodidade-item svg { width: 1.1rem; height: 1.1rem; flex-shrink: 0; color: var(--azul); }
+
+        /* CTA FINAL */
+        #cta-final { background: linear-gradient(135deg, rgba(21,42,70,0.88) 0%, rgba(42,111,168,0.72) 100%), url('imagens/Fachada.png') center/cover no-repeat; text-align: center; padding: 6rem 0; }
+        #cta-final .section-tag { color: rgba(255,255,255,0.7); }
+        #cta-final h2 { font-size: clamp(2rem, 4vw, 2.8rem); color: var(--branco); margin-bottom: 1rem; }
+        #cta-final p { color: rgba(255,255,255,0.82); font-size: 1rem; max-width: 520px; margin: 0 auto 2.5rem; line-height: 1.75; }
+        .cta-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; }
+
+        /* CONTATO */
+        #contato { background: var(--branco); }
+        .contato-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-top: 3rem; }
+        .contato-card { background: var(--cinza-claro); border-radius: var(--radius); padding: 2rem; display: flex; flex-direction: column; align-items: center; text-align: center; gap: 1rem; transition: var(--transicao); }
+        .contato-card:hover { box-shadow: var(--sombra-hover); transform: translateY(-4px); }
+        .contato-icone { width: 3rem; height: 3rem; border-radius: 50%; background: rgba(60,140,200,0.1); display: flex; align-items: center; justify-content: center; color: var(--azul); }
+        .contato-icone svg { width: 1.4rem; height: 1.4rem; }
+        .contato-card h4 { font-size: 0.875rem; font-weight: 700; }
+        .contato-card a, .contato-card span { font-size: 0.875rem; color: var(--texto-suave); }
+        .contato-card a:hover { color: var(--azul); }
+
+        /* DEPOIMENTOS */
+        #depoimentos { background: var(--cinza-claro); }
+        .depoimentos-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-top: 3rem; }
+        .depoimento-card { background: var(--branco); border-radius: var(--radius); padding: 2rem; box-shadow: var(--sombra); display: flex; flex-direction: column; gap: 1.25rem; transition: var(--transicao); }
+        .depoimento-card:hover { box-shadow: var(--sombra-hover); transform: translateY(-3px); }
+        .depoimento-aspas { color: var(--azul); opacity: 0.2; width: 32px; height: 32px; }
+        .depoimento-estrelas { color: var(--laranja); font-size: 1.05rem; letter-spacing: 2px; margin: 0; }
+        .depoimento-texto { font-size: 0.96rem; color: var(--texto-suave); line-height: 1.8; flex: 1; margin: 0; }
+        .depoimento-autor { display: flex; align-items: center; gap: 0.75rem; border-top: 1px solid var(--cinza); padding-top: 1.25rem; }
+        .depoimento-inicial { width: 42px; height: 42px; border-radius: 50%; background: var(--azul); color: var(--branco); font-family: 'Raleway', sans-serif; font-weight: 700; font-size: 1rem; display: flex; align-items: center; justify-content: center; flex-shrink: 0; }
+        .depoimento-autor-info strong { display: block; font-size: 0.92rem; color: var(--texto); font-family: 'Raleway', sans-serif; }
+        .depoimento-google { font-size: 0.78rem; color: var(--texto-suave); }
+
+        /* FOOTER */
+        footer { background: var(--azul); color: rgba(255,255,255,0.88); }
+        .footer-main { padding: 3.5rem 0; }
+        .footer-cols { display: grid; grid-template-columns: 1fr auto 1fr; gap: 4rem; align-items: center; }
+        .footer-contato h3 { font-family: 'Comfortaa', sans-serif; color: var(--branco); font-size: 1.5rem; font-weight: 700; margin-bottom: 1.5rem; }
+        .footer-contato-lista { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
+        .footer-contato { text-align: center; }
+        .footer-contato-lista li { display: flex; align-items: center; justify-content: center; gap: 0.75rem; font-size: 0.88rem; color: rgba(255,255,255,0.9); }
+        .footer-contato-lista li svg { width: 1.1rem; height: 1.1rem; color: var(--laranja); flex-shrink: 0; }
+        .footer-contato-lista a { color: rgba(255,255,255,0.9); transition: var(--transicao); }
+        .footer-contato-lista a:hover { color: var(--branco); text-decoration: underline; }
+        .footer-centro { text-align: center; }
+        .footer-centro img { height: 80px; width: auto; margin: 0 auto 1rem; }
+        .footer-tagline { font-family: 'Comfortaa', sans-serif; color: rgba(255,255,255,0.82); font-size: 1rem; letter-spacing: 0.04em; }
+        .footer-unidades { text-align: center; }
+        .footer-unidades h3 { font-family: 'Comfortaa', sans-serif; color: var(--branco); font-size: 1.5rem; font-weight: 700; margin-bottom: 0.75rem; }
+        .footer-unidades p { color: rgba(255,255,255,0.78); font-size: 0.88rem; line-height: 1.65; margin-bottom: 1.5rem; }
+        .btn-footer { background: var(--laranja); color: var(--branco); display: inline-flex; align-items: center; gap: 0.5rem; padding: 0.75rem 1.75rem; border-radius: 50px; font-family: 'Comfortaa', sans-serif; font-size: 0.84rem; font-weight: 600; transition: var(--transicao); }
+        .btn-footer:hover { background: var(--laranja-escuro); transform: translateY(-2px); box-shadow: 0 6px 20px rgba(244,146,0,0.4); }
+        .footer-bottom { background: rgba(0,0,0,0.18); padding: 1.25rem 0; }
+        .footer-bottom-inner { display: flex; align-items: center; justify-content: space-between; font-size: 0.78rem; color: rgba(255,255,255,0.55); }
+
+        /* WHATSAPP */
+        .whatsapp-float { position: fixed; bottom: 2rem; right: 2rem; z-index: 998; display: flex; align-items: center; gap: 0.75rem; background: #25D366; color: white; padding: 0.9rem 1.5rem; border-radius: 50px; font-weight: 600; font-size: 0.875rem; box-shadow: 0 4px 20px rgba(37,211,102,0.4); transition: var(--transicao); animation: waPulse 2.5s ease-in-out infinite; }
+        .whatsapp-float:hover { transform: translateY(-3px); animation: none; }
+        @keyframes waPulse { 0%, 100% { box-shadow: 0 4px 20px rgba(37,211,102,0.4); } 50% { box-shadow: 0 4px 28px rgba(37,211,102,0.65); } }
+        .wa-icon { width: 22px; height: 22px; flex-shrink: 0; }
+
+        /* RESPONSIVO */
+        @media (max-width: 768px) {
+            .whatsapp-float { padding: 1rem; border-radius: 50%; width: 56px; height: 56px; justify-content: center; }
+            .whatsapp-float span { display: none; }
+            .header-nav-row { display: none; }
+            .hamburger { display: flex; }
+            .header-logo-row { padding: 0.85rem 0; }
+            header { background: var(--branco); box-shadow: 0 2px 12px rgba(0,0,0,0.08); }
+            header .header-logo-row { border-bottom-color: #ebebeb; }
+            header .hamburger span { background: var(--texto); }
+            .two-col, .contato-grid { grid-template-columns: 1fr; gap: 2.5rem; }
+            .numeros-grid { grid-template-columns: 1fr 1fr; }
+            .numero-card p { display: none; }
+            .comodidades-grid { grid-template-columns: 1fr 1fr; gap: 0.5rem; }
+            .comodidade-item { font-size: 0.72rem; padding: 0.65rem 0.5rem; gap: 0.4rem; }
+            .hero-actions { flex-direction: column; }
+            .footer-cols { grid-template-columns: 1fr; gap: 2rem; text-align: center; }
+            .footer-centro { order: -1; }
+            .footer-contato-lista li { justify-content: center; }
+            .footer-bottom-inner { flex-direction: column; gap: 0.5rem; text-align: center; }
+            .cta-actions { flex-direction: column; align-items: center; }
+            .depoimentos-grid { grid-template-columns: 1fr; }
+            section { padding: 3.5rem 0; }
+        }
+
+        @media (max-width: 480px) { .container { padding: 0 1.25rem; } }
+    </style>
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-WXKFNX5"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
+<header id="header">
+    <div class="container">
+        <div class="header-logo-row">
+            <a href="index.html" class="logo">
+                <img src="imagens/logos/header-site-dok-sleep_Prancheta 1 cópia 7.png" alt="Dok Hotel" class="logo-img">
+                <img src="imagens/logos/header-site-dok-sleep_Prancheta 1 cópia 6.png" alt="Dok Hotel" class="logo-img-colorida">
+            </a>
+            <button class="hamburger" id="hamburger" onclick="toggleMenu()" aria-label="Menu">
+                <span></span><span></span><span></span>
+            </button>
+        </div>
+        <div class="header-nav-row">
+            <ul class="nav-links">
+                <li><a href="index.html">Início</a></li>
+                <li><a href="index.html#acomodacoes">Acomodações</a></li>
+                <li><a href="empresas.html" class="active">Empresas</a></li>
+                <li><a href="mensalistas.html">Mensalistas</a></li>
+                <li><a href="index.html#localizacao">Localização</a></li>
+                <li><a href="unidades.html">Nossas Unidades</a></li>
+            </ul>
+            <a href="https://wa.me/556133992565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20uma%20reserva%20no%20Dok%20Hotel"
+               class="btn btn-primary" target="_blank" rel="noopener">Reserve Agora</a>
+        </div>
+    </div>
+</header>
+
+<nav id="mobileNav">
+    <button class="mobile-nav-close" onclick="toggleMenu()">✕</button>
+    <a href="index.html" onclick="toggleMenu()">Início</a>
+    <a href="index.html#acomodacoes" onclick="toggleMenu()">Acomodações</a>
+    <a href="empresas.html" onclick="toggleMenu()">Empresas</a>
+    <a href="mensalistas.html" onclick="toggleMenu()">Mensalistas</a>
+    <a href="index.html#localizacao" onclick="toggleMenu()">Localização</a>
+    <a href="unidades.html" onclick="toggleMenu()">Nossas Unidades</a>
+    <a href="https://wa.me/556133992565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20fazer%20uma%20reserva%20no%20Dok%20Hotel"
+       class="btn btn-primary" target="_blank" rel="noopener" onclick="toggleMenu()">Reserve Agora</a>
+</nav>
+
+
+<!-- HERO -->
+<section id="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-overlay"></div>
+    <div class="container">
+        <div class="hero-content">
+            <div class="hero-location">Empresas & Grupos · Dok Hotel</div>
+            <h1 class="hero-title">O hotel ideal para<br><span>os seus colaboradores</span></h1>
+            <p class="hero-desc">Condições especiais, faturamento direto e quartos amplos para acomodar sua equipe com conforto e praticidade em Brasília.</p>
+            <div class="hero-actions">
+                <a href="https://wa.me/556133992565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20proposta%20para%20empresas%20no%20Dok%20Hotel"
+                   class="btn btn-primary" target="_blank" rel="noopener">
+                    <i data-lucide="message-circle"></i> Solicitar Proposta
+                </a>
+                <a href="mailto:reservasdokhotel@gmail.com" class="btn btn-outline-white">
+                    <i data-lucide="mail"></i> Enviar E-mail
+                </a>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- BENEFÍCIOS -->
+<section id="beneficios">
+    <div class="container">
+        <div class="two-col">
+            <div class="fotos-duo">
+                <img src="imagens/empresas.png" alt="Dok Hotel" class="foto-principal" loading="lazy">
+                <img src="imagens/IMG_3770-editada.site_.png" alt="Dok Hotel" class="foto-flutuante" loading="lazy">
+            </div>
+            <div>
+                <span class="section-tag">Por que o Dok Hotel?</span>
+                <h2 class="section-title">Sem burocracia.<br>Com condições especiais.</h2>
+                <p class="section-subtitle">Tudo que sua empresa precisa para hospedar colaboradores com conforto, agilidade e custo-benefício em Águas Claras.</p>
+                <div class="lista-beneficios">
+                    <div class="beneficio-item">
+                        <div class="beneficio-icone"><i data-lucide="receipt"></i></div>
+                        <div class="beneficio-texto">
+                            <strong>Faturamento Direto para Empresas</strong>
+                            <span>Emitimos nota fiscal e faturamos diárias diretamente para o CNPJ da sua empresa.</span>
+                        </div>
+                    </div>
+                    <div class="beneficio-item">
+                        <div class="beneficio-icone"><i data-lucide="tag"></i></div>
+                        <div class="beneficio-texto">
+                            <strong>Preços Especiais</strong>
+                            <span>Condições diferenciadas a depender da quantidade de dias e número de colaboradores.</span>
+                        </div>
+                    </div>
+                    <div class="beneficio-item">
+                        <div class="beneficio-icone"><i data-lucide="bed-double"></i></div>
+                        <div class="beneficio-texto">
+                            <strong>Quartos Amplos e Equipados</strong>
+                            <span>Acomodações para uso individual ou compartilhado, com mesa de estudo e Wi-Fi para home office.</span>
+                        </div>
+                    </div>
+                    <div class="beneficio-item">
+                        <div class="beneficio-icone"><i data-lucide="car"></i></div>
+                        <div class="beneficio-texto">
+                            <strong>Garagem Coberta Privativa</strong>
+                            <span>Estacionamento coberto e seguro para os colaboradores da sua empresa durante toda a estadia.</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- NÚMEROS -->
+<section id="numeros">
+    <div class="container">
+        <div style="text-align:center; max-width:560px; margin:0 auto;">
+            <span class="section-tag">Estrutura</span>
+            <h2 class="section-title">Tudo que sua equipe precisa</h2>
+        </div>
+        <div class="numeros-grid">
+            <div class="numero-card">
+                <div class="numero-val">24h</div>
+                <h3>Recepção</h3>
+                <p>Atendimento disponível a qualquer hora para dar suporte aos seus colaboradores durante toda a estadia.</p>
+            </div>
+            <div class="numero-card">
+                <div class="numero-val">100%</div>
+                <h3>Wi-Fi em todos os quartos</h3>
+                <p>Conexão de alta velocidade para garantir produtividade e comunicação sem interrupções.</p>
+            </div>
+            <div class="numero-card">
+                <div class="numero-val-icone"><i data-lucide="concierge-bell"></i></div>
+                <h3>Serviços inclusos</h3>
+                <p>Café da manhã, limpeza diária, ar-condicionado, Smart TV, frigobar, mesa de trabalho e garagem coberta.</p>
+            </div>
+            <div class="numero-card">
+                <div class="numero-val-icone"><i data-lucide="car"></i></div>
+                <h3>Garagem Coberta</h3>
+                <p>Privativa e segura — diferencial exclusivo para empresas que precisam de estacionamento confiável em Brasília.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- COMODIDADES -->
+<section id="comodidades">
+    <div class="container">
+        <div class="two-col">
+            <div class="foto-unica-wrap">
+                <img src="imagens/quarto-quadruplo.png" alt="Quarto Dok Hotel" loading="lazy">
+            </div>
+            <div>
+                <span class="section-tag">O que está incluso</span>
+                <h2 class="section-title">Conforto completo<br>para seus colaboradores</h2>
+                <div class="comodidades-grid" style="margin-top:2rem;">
+                    <div class="comodidade-item"><i data-lucide="coffee"></i> Café da manhã</div>
+                    <div class="comodidade-item"><i data-lucide="tv"></i> Smart TV</div>
+                    <div class="comodidade-item"><i data-lucide="wind"></i> Ar-condicionado</div>
+                    <div class="comodidade-item"><i data-lucide="wifi"></i> Wi-Fi gratuito</div>
+                    <div class="comodidade-item"><i data-lucide="thermometer-snowflake"></i> Frigobar</div>
+                    <div class="comodidade-item"><i data-lucide="monitor"></i> Mesa de Trabalho</div>
+                    <div class="comodidade-item"><i data-lucide="sparkles"></i> Limpeza de Qualidade</div>
+                    <div class="comodidade-item"><i data-lucide="concierge-bell"></i> Recepção 24h</div>
+                    <div class="comodidade-item"><i data-lucide="shield-check"></i> Câmeras de Segurança</div>
+                    <div class="comodidade-item"><i data-lucide="car"></i> Garagem Coberta</div>
+                    <div class="comodidade-item"><i data-lucide="bath"></i> Banheiro Privativo</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- PARCERIAS -->
+<section id="lavanderia-empresas">
+    <div class="container">
+        <div class="servicos-extras-grid">
+            <div class="servico-extra-card">
+                <img src="imagens/lavanderia.jpg" alt="Lavanderia Lavô para colaboradores" class="servico-extra-foto" loading="lazy">
+                <div class="servico-extra-corpo">
+                    <span class="section-tag">Parceria</span>
+                    <h3>Lavanderia para sua equipe</h3>
+                    <p>Oferecemos serviço de lavanderia para os colaboradores hospedados — incluindo a lavagem de uniformes de trabalho. Deixe as peças na recepção e cuidamos do resto. Serviço cobrado à parte, por cesto.</p>
+                    <a href="https://wa.me/556133992565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Dok%20Hotel"
+                       class="btn btn-outline-white" target="_blank" rel="noopener">Saiba mais</a>
+                </div>
+            </div>
+            <div class="servico-extra-card">
+                <img src="imagens/bsbfachada.png" alt="BSB Locadora - Frotas para empresas" class="servico-extra-foto foto-contem" loading="lazy">
+                <div class="servico-extra-corpo">
+                    <span class="section-tag">Parceria</span>
+                    <h3>Frotas para sua empresa</h3>
+                    <p>Mobilidade completa para seus colaboradores em Brasília. Através da nossa parceria com a BSB Locadora, sua empresa tem acesso a condições especiais de locação de veículos durante a hospedagem.</p>
+                    <a href="https://bsblocadora.com.br/" class="btn btn-outline-white" target="_blank" rel="noopener">Conhecer</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- DEPOIMENTOS -->
+<section id="depoimentos">
+    <div class="container">
+        <div class="section-header" style="text-align:center;">
+            <span class="section-tag">Depoimentos</span>
+            <h2 class="section-title">O que nossos clientes dizem</h2>
+            <p class="section-subtitle" style="margin:0 auto;">Empresas e grupos que confiaram no Dok Hotel e aprovaram a experiência.</p>
+        </div>
+        <div class="depoimentos-grid">
+            <div class="depoimento-card">
+                <div class="depoimento-aspas"><i data-lucide="quote"></i></div>
+                <p class="depoimento-estrelas">★★★★★</p>
+                <p class="depoimento-texto">Localização fácil, atendimento excelente e quartos sempre organizados. A equipe foi muito prestativa com todo o grupo. Recomendo para qualquer empresa que precise hospedar colaboradores em Brasília.</p>
+                <div class="depoimento-autor">
+                    <div class="depoimento-inicial">L</div>
+                    <div class="depoimento-autor-info">
+                        <strong>Leonardo Augusto</strong>
+                        <span class="depoimento-google">via Google</span>
+                    </div>
+                </div>
+            </div>
+            <div class="depoimento-card">
+                <div class="depoimento-aspas"><i data-lucide="quote"></i></div>
+                <p class="depoimento-estrelas">★★★★★</p>
+                <p class="depoimento-texto">Hotel muito limpo, bem iluminado e organizado. Café da manhã de qualidade e garagem coberta que fez toda a diferença para nossa equipe. Um hotel que atende todas as expectativas corporativas.</p>
+                <div class="depoimento-autor">
+                    <div class="depoimento-inicial">E</div>
+                    <div class="depoimento-autor-info">
+                        <strong>Ednilson Santos</strong>
+                        <span class="depoimento-google">via Google</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- CTA FINAL -->
+<section id="cta-final">
+    <div class="container">
+        <span class="section-tag">Vamos conversar?</span>
+        <h2>Fale com nossa equipe<br>sem burocracia</h2>
+        <p>Entre em contato e receba uma proposta personalizada para a sua empresa. Rápido, fácil e sem compromisso.</p>
+        <div class="cta-actions">
+            <a href="https://wa.me/556133992565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20uma%20proposta%20para%20empresas%20no%20Dok%20Hotel"
+               class="btn btn-primary" target="_blank" rel="noopener">
+                <i data-lucide="message-circle"></i> Solicitar Proposta pelo WhatsApp
+            </a>
+            <a href="mailto:reservasdokhotel@gmail.com" class="btn btn-outline-white">
+                <i data-lucide="mail"></i> Enviar E-mail
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<!-- CONTATO -->
+<section id="contato">
+    <div class="container">
+        <div style="text-align:center;">
+            <span class="section-tag">Contato</span>
+            <h2 class="section-title">Fale diretamente conosco</h2>
+        </div>
+        <div class="contato-grid">
+            <div class="contato-card">
+                <div class="contato-icone"><i data-lucide="phone"></i></div>
+                <h4>Telefone / WhatsApp</h4>
+                <a href="tel:+556133992565">(61) 3399-2565</a>
+            </div>
+            <div class="contato-card">
+                <div class="contato-icone"><i data-lucide="mail"></i></div>
+                <h4>E-mail</h4>
+                <a href="mailto:reservasdokhotel@gmail.com">reservasdokhotel@gmail.com</a>
+            </div>
+            <div class="contato-card">
+                <div class="contato-icone"><i data-lucide="map-pin"></i></div>
+                <h4>Endereço</h4>
+                <span>ADE Conjunto 16 Lote 35<br>Águas Claras — DF</span>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- FOOTER -->
+<footer>
+    <div class="footer-main">
+        <div class="container">
+            <div class="footer-cols">
+                <div class="footer-contato">
+                    <h3>Contatos</h3>
+                    <ul class="footer-contato-lista">
+                        <li><i data-lucide="phone"></i><a href="tel:+556133992565">(61) 3399-2565</a></li>
+                        <li><i data-lucide="mail"></i><a href="mailto:reservasdokhotel@gmail.com">reservasdokhotel@gmail.com</a></li>
+                        <li><i data-lucide="map-pin"></i>ADE Conjunto 16 Lote 35, Águas Claras — DF</li>
+                    </ul>
+                </div>
+                <div class="footer-centro">
+                    <img src="imagens/logos/icone-boneco_Prancheta 1.png" alt="Dok Hotel" loading="lazy">
+                    <div class="footer-tagline">sua casa fora de casa</div>
+                </div>
+                <div class="footer-unidades">
+                    <h3>Sleep Hotéis</h3>
+                    <p>Uma rede de hotéis em Taguatinga e Águas Claras com conforto, praticidade e ótimo custo-benefício.</p>
+                    <a href="unidades.html" class="btn-footer"><i data-lucide="building-2"></i>Nossas Unidades</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="footer-bottom-inner">
+                <span>© 2026 Dok Hotel. Todos os direitos reservados.</span>
+                <span>Águas Claras · Brasília · DF</span>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<a href="https://wa.me/556133992565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Dok%20Hotel"
+   class="whatsapp-float" target="_blank" rel="noopener" aria-label="WhatsApp">
+    <svg class="wa-icon" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span>Fale conosco</span>
+</a>
+
+<script src="https://unpkg.com/lucide@latest/dist/umd/lucide.min.js"></script>
+<script>
+    lucide.createIcons();
+    const fotosDuo = document.querySelectorAll('.fotos-duo');
+    const duoObserver = new IntersectionObserver(entries => {
+        entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); duoObserver.unobserve(e.target); } });
+    }, { threshold: 0.2 });
+    fotosDuo.forEach(d => duoObserver.observe(d));
+    const header = document.getElementById('header');
+    window.addEventListener('scroll', () => { header.classList.toggle('scrolled', window.scrollY > 80); });
+    function toggleMenu() {
+        const nav = document.getElementById('mobileNav');
+        const isOpen = nav.classList.toggle('open');
+        document.body.style.overflow = isOpen ? 'hidden' : '';
+    }
+</script>
+</body>
+</html>
