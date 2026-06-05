@@ -115,6 +115,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         .numero-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 0.5rem; }
         .numero-card p { font-size: 0.875rem; color: var(--texto-suave); line-height: 1.65; }
 
+        /* PARCERIAS */
+        #lavanderia-mensalistas { background: var(--cinza-claro); padding: 3rem 0 5rem; }
+        .servicos-extras-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
+        .servico-extra-card { background: linear-gradient(160deg, var(--azul) 0%, var(--azul-escuro) 100%); border-radius: var(--radius); overflow: hidden; display: flex; flex-direction: column; }
+        .servico-extra-foto { width: 100%; height: 210px; object-fit: cover; display: block; }
+        .servico-extra-foto.foto-contem { object-fit: cover; object-position: bottom; }
+        .servico-extra-corpo { padding: 1.75rem 2rem 2rem; display: flex; flex-direction: column; flex: 1; gap: 0.6rem; }
+        .servico-extra-corpo .section-tag { color: rgba(255,255,255,0.7); margin-bottom: 0; }
+        .servico-extra-corpo h3 { font-family: 'Raleway', sans-serif; font-size: 1.2rem; color: var(--branco); }
+        .servico-extra-corpo p { font-size: 0.875rem; color: rgba(255,255,255,0.82); line-height: 1.65; flex: 1; }
+        .servico-extra-corpo .btn { align-self: flex-start; margin-top: 0.5rem; }
+
         /* CTA FINAL */
         #cta-final { background: var(--branco); }
         .cta-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 5rem; align-items: center; background: linear-gradient(to right, #2a6fa8 15%, rgba(42,111,168,0.5) 42%, rgba(42,111,168,0.15) 65%, transparent 90%), #f4f7fb; border-radius: var(--radius); overflow: hidden; padding: 4rem 4rem 4rem 4rem; }
@@ -185,13 +197,17 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             .footer-contato-lista li { justify-content: center; }
             .footer-bottom-inner { flex-direction: column; gap: 0.5rem; text-align: center; }
             .cta-actions { flex-direction: column; align-items: flex-start; }
-            .cta-layout { padding: 2.5rem 1.5rem; }
+            .cta-layout { padding: 2.5rem 1.5rem; background: #2a6fa8; }
             .cta-foto-wrap { display: none; }
+            .foto-unica-wrap::before { display: none; }
+            .servicos-extras-grid { grid-template-columns: 1fr; }
+            .servico-extra-foto { height: 180px; }
             section { padding: 3.5rem 0; }
         }
         @media (max-width: 480px) {
             .container { padding: 0 1.25rem; }
             .vantagens-grid { grid-template-columns: 1fr; }
+            .numeros-grid { grid-template-columns: 1fr; }
             .incluso-grid { grid-template-columns: 1fr; }
         }
     </style>
@@ -358,6 +374,34 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
                 <div class="numero-val">0</div>
                 <h3>Burocracia</h3>
                 <p>Sem fiador, sem análise de crédito complicada. Entrada rápida e processo simplificado.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+<!-- PARCERIAS -->
+<section id="lavanderia-mensalistas">
+    <div class="container">
+        <div class="servicos-extras-grid">
+            <div class="servico-extra-card">
+                <img src="imagens/lavanderia.jpg" alt="Serviço de Lavanderia Lavô" class="servico-extra-foto" loading="lazy">
+                <div class="servico-extra-corpo">
+                    <span class="section-tag">Parceria</span>
+                    <h3>Serviço de Lavanderia</h3>
+                    <p>Praticidade no dia a dia. Através da parceria com a Lavô, deixe suas roupas na recepção e nós cuidamos do encaminhamento. Serviço externo avulso, cobrado por cesto — à parte da mensalidade.</p>
+                    <a href="https://wa.me/556133992565?text=Ol%C3%A1%2C%20vim%20pelo%20site%20e%20gostaria%20de%20saber%20mais%20sobre%20o%20Dok%20Hotel"
+                       class="btn btn-outline-white" target="_blank" rel="noopener">Saiba Mais</a>
+                </div>
+            </div>
+            <div class="servico-extra-card">
+                <img src="imagens/bsbfachada.png" alt="BSB Locadora - Aluguel de Carros" class="servico-extra-foto foto-contem" loading="lazy">
+                <div class="servico-extra-corpo">
+                    <span class="section-tag">Parceria</span>
+                    <h3>Aluguel de Carros</h3>
+                    <p>Mobilidade completa durante sua estadia em Brasília. O Dok Hotel tem parceria com a BSB Locadora para oferecer condições especiais de aluguel de carros para mensalistas.</p>
+                    <a href="https://bsblocadora.com.br/" class="btn btn-outline-white" target="_blank" rel="noopener">Conhecer</a>
+                </div>
             </div>
         </div>
     </div>
